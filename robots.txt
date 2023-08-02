@@ -1,0 +1,9 @@
+User-agent: GoogleBot
+Allow: /index.html
+Allow: /curriculo_bruno.html
+Allow: /politica_de_atendimento.html
+Allow: /portfolio_senai.html
+Allow: /formulario_contato.html
+User-agent: *
+Disallow: /
+Sitemap: http://Brunotechempire>/sitemap.xml

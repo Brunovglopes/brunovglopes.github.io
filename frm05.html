@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> REFERENCIAS PROFISSIONAIS </title>
+        <link rel="icon" href="triste.png">
+    </head>
+    <script type="text/javascript" src="analytics.js"></script>
+        <style>
+            body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    font-size: 16px;
+    background-image: url("images.jpeg") ;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 800px;
+         }
+        </style>
+    
+    <body>
+        <a href="menu.html">Sumário</a>
+        <a href="frm04.html">Voltar</a>
+        <a href="frm07.html">Próximo</a>
+        <h1 align="center"><font color="black"> Cadastro </h1>
+            <FORM name="dados" id="dados" method="post" action="frm05.html">
+        <fieldset>
+        <Legend>Dados Pessoais</Legend>
+           <label for="nome">Nome completo  :</label>
+           <input tabindex="1" type="text" name="nome" id="nome" size="70" 
+           placeholder="Seu nome" 
+           autocomplete="off"/>
+           <label for="cpf"> CPF:</label>
+           <input tabindex="2" type="text" name="cpf" id="cpf" size="70" 
+           placeholder="Digite seu CPF..." maxlength="14"
+           autocomplete="off"/>
+           <br>
+           <label for="tipo"> Tipo de referência :</label>
+            <input tabindex="3" list="t" name="tipo" id="tipo" size="40" 
+            placeholder="Referência"
+            autocomplete="off"/>
+        <datalist id="t">
+            <option value="Conhecido"/>
+            <option value="Colega de trabalho"/>
+            <option value="Clinte"/>
+            <option value="Fornecedor"/>
+            <option value="Parceiro Comercial"/>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <Legend>Dados de contato </Legend>
+        <label for="telefone"> Telefone:</label>
+        <input tabindex="4" type="text" name="telefone" id="telefone" size="40" 
+        placeholder="(DDD) 00000-0000" 
+        autocomplete="off"/>
+        <font style="margin-left:175px;">
+            <label for="email">Email:</label>
+            <input tabindex="5" type="text" name="emai" id="email" size="80" 
+            autocomplete="off"/>
+        </font>
+        <br>
+        <label for="site"> Site:</label>
+           <input tabindex="6" type="text" name="site" id="site" size="163" 
+           placeholder="" maxlength="14"
+           autocomplete="off"/>
+    </fieldset>
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label for="frm_rad">Possui empresa?</label>
+        <input tabindex="11" type="radio" name="frm_rad" id="frm_rad" value="S" />Sim
+        <input tabindex="11" type="radio" name="frm_rad" id="frm_rad" value="N"/>Não
+        <font style="margin-left:175px;">
+            <label for="empresa"> Nome da empresa:</label>
+            <input tabindex="12" type="text" name="empresa" id="empresa" size="40" 
+            placeholder="" 
+            autocomplete="off"/> 
+            </font>
+            <br>
+            <input tabindex="13" type="reset" value="Limpar"/>
+            <input tabindex="14" type="submit" value="Enviar">
+    </fieldset>
+            </FORM>
+    </body>
+</html>
+
+           
+
+
+        
+    
+    

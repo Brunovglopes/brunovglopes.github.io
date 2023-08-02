@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="analytics.js"></script>
+        <meta charset="utf-8">
+        <title> PESSOA FISICA </title>
+        <link rel="icon" href="triste.png">
+        <style>
+            body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    font-size: 16px;
+    background-image: url("images.jpeg") ;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 800px;
+} 
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href="menu.html">Sumário</a>
+        <a href="index.html">Voltar</a>
+        <a href="frm04.html">Próximo</a>
+
+    <font>
+        <h1 align="center"><font color="black"> Cadastro </h1>
+        <fieldset>
+            <Legend>Dados Pessoais</Legend>
+         <FORM name="dados" id="dados" method="post" action="frm03.html">
+            <label for="nome">Nome completo  :</label>
+            <input tabindex="1" type="text" name="nome" id="nome" size="70" 
+            placeholder="Seu nome" 
+            autocomplete="off"/>
+            <label for="cpf"> CPF:</label>
+            <input tabindex="2" type="text" name="cpf" id="cpf" size="70" 
+            placeholder="Digite seu CPF..." maxlength="14"
+            autocomplete="off"/>
+            <br>
+            <label for="data"> Data de nascimento:</label>
+            <input tabindex="3" type="date" name="data" id="data" size="40" 
+            placeholder="dd/mm/aaaa" 
+            autocomplete="off"/> 
+                <font style="margin-left:385px;">
+                    <label for="nat">Naturalidade:</label>
+                    <input tabindex="4" type="text" name="nat" id="nat" size="40" 
+                    placeholder="Cidade de nascimento" 
+                    autocomplete="off"/>
+                </font>
+                <br>
+                <label for="sexo" >  Sexo:</label>
+                <input tabindex="5" type="radio" name="sexo" id="sexo" size="40" value="M" autocomplete="off"/> Masculino
+                <input tabindex="6" type="radio" name="sexo" id="sexo" size="40" value="F"  
+                autocomplete="off"/>Feminino
+                <font style="margin-left:418px;">
+                <label for="nac">Nacionalidade:</label>
+                <input tabindex="7" type="text" name="nac" id="nac" size="40" 
+                placeholder="Pais de nascimento" 
+                autocomplete="off"/>
+                <br> 
+                </font>
+        </fieldset>
+        <p></p>
+        <fieldset>
+            <Legend>Dados de localização</Legend>
+            <label for="CEP">CEP :</label>
+            <input tabindex="1" type="text" name="CEP" id="CEP" size="70" 
+            placeholder="CEP" 
+            autocomplete="off"/>
+            <label for="RUA"> RUA:</label>
+            <input tabindex="2" type="text" name="RUA" id="RUA" size="70" 
+            maxlength="14"
+            autocomplete="off"/>
+            <br>
+            <label for="NUM"> NÚMERO:</label>
+            <input tabindex="3" type="text" name="NUM" id="NUM" size="40" 
+            placeholder="" 
+            autocomplete="off"/> 
+                <font style="margin-left:175px;">
+                    <label for="COM">COMPLEMENTO:</label>
+                    <input tabindex="4" type="text" name="COM" id="COM" size="40" 
+                    autocomplete="off"/>
+                </font>
+                <br>
+                <label for="BAIRRO" > BAIRRO:</label>
+                <input tabindex="5" type="text" name="BAIRRO" id="BAIRRO" size="40" autocomplete="off"/> 
+                <font style="margin-left:185px;">
+                <label for="CIDADE">CIDADE:</label>
+                <input tabindex="6" type="text" name="CIDADE" id="CIDADE" size="40"  
+                autocomplete="off"/>
+                <br>
+                <label for="est"> ESTADO </label>
+                <input tabindex="7" list="est" size="30"
+                placeholder="Digite o estado"
+                autocomplete="off"/>
+            <datalist id="est">
+                <option value="Amazonas"/>
+                <option value="Acre"/>
+                <option value="Alagoas"/>
+                <option value="Amapá"/>
+                <option value="Bahia"/>
+                <option value="Ceará"/>
+                <option value="Distrito Federal"/>
+                <option value="Espírito Santo"/>
+                <option value="Goiás"/>
+                <option value="Maranhão"/>
+                <option value="Mato Grosso"/>
+                <option value="Mato Grosso do Sul"/>
+                <option value="Minas Gerais"/>
+                <option value="Pará"/>
+                <option value="Paraná"/>
+                <option value="Paraíba"/>
+                <option value="Pernambuco"/>
+                <option value="Piauí"/>
+                <option value="Rio de Janeiro"/>
+                <option value="Rio Grande do Norte"/>
+                <option value="Rio Grande do Sul"/>
+                <option value="Rondônia"/>
+                <option value="Roraima"/>
+                <option value="Sergipe"/>
+                <option value="São Paulo"/>
+                <option value="Santa Catarina"/>
+                <option value="Tocantins"/>    
+            </datalist>
+
+
+        </font>
+                <BR>
+                <input tabindex="8" type="reset" value="Limpar"/>
+                <input tabindex="9" type="submit" value="Enviar">
+              
+        </FORM>
+        </fieldset>
+    </font>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

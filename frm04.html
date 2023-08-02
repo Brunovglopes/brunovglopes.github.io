@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> REFERÊNCIAS PESSOAIS </title>
+        <link rel="icon" href="triste.png">
+    </head>
+    <script type="text/javascript" src="analytics.js"></script>
+        <style>
+            body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    font-size: 16px;
+    background-image: url("images.jpeg") ;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 800px;
+
+    
+}
+        </style>
+    </head>
+    <body>
+        <a href="menu.html">Sumário</a>
+        <a href="frm03.html">Voltar</a>
+        <a href="frm05.html">Próximo</a>
+        <h1 align="center"><font color="black"> Cadastro </h1>
+        <fieldset>
+            <Legend>Identificação</Legend>
+            <FORM name="dados" id="dados" method="post" action="frm04.html">
+            <label for="nome">Nome completo  :</label>
+            <input tabindex="1" type="text" name="nome" id="nome" size="70" 
+            placeholder="Seu nome" 
+            autocomplete="off"/>
+            <label for="cpf"> CPF:</label>
+            <input tabindex="2" type="text" name="cpf" id="cpf" size="70" 
+            placeholder="Digite seu CPF..." maxlength="14"
+            autocomplete="off"/>
+            <br>
+            <label for="tipo"> Tipo de referência :</label>
+            <input tabindex="3" list="t" name="tipo" id="tipo" size="40" 
+            placeholder="Referência"
+            autocomplete="off"/>
+        <datalist id="t">
+            <option value=" Pessoal(Pai, Mãe, Irma(ao), Esposa(o), Filha(o))"/>
+            <option value="Familiar(Prima(o), Tia(o), Avó(ô))"/>
+            <option value="Comercial(Cliente, Fornecedor, Funcionario)"/>
+            <BR>
+            </datalist>  
+        </fieldset>
+        <P></P>
+        <fieldset>
+            <Legend>Dados de localização</Legend>
+            <label for="CEP">CEP :</label>
+            <input tabindex="4" type="text" name="CEP" id="CEP" size="45" 
+            placeholder="CEP" 
+            autocomplete="off"/>
+            <font style="margin-left:175px;">
+            <label for="RUA"> RUA:</label>
+            <input tabindex="5" type="text" name="RUA" id="RUA" size="70" 
+            maxlength="14"
+            autocomplete="off"/>
+            </font>
+            <br>
+            <label for="NUM"> NÚMERO:</label>
+            <input tabindex="6" type="text" name="NUM" id="NUM" size="40" 
+            placeholder="" 
+            autocomplete="off"/> 
+                <font style="margin-left:175px;">
+                    <label for="COM">COMPLEMENTO:</label>
+                    <input tabindex="7" type="text" name="COM" id="COM" size="40" 
+                    autocomplete="off"/>
+                </font>
+                <br>
+                <label for="BAIRRO" > BAIRRO:</label>
+                <input tabindex="8" type="text" name="BAIRRO" id="BAIRRO" size="41" autocomplete="off"/> 
+                <font style="margin-left:177px;">
+                <label for="CIDADE">CIDADE:</label>
+                <input tabindex="9" type="text" name="CIDADE" id="CIDADE" size="40"  
+                autocomplete="off"/>
+                <br>
+                <label for="est"> ESTADO </label>
+                <input tabindex="10" list="est" size="30"
+                placeholder="Digite o estado"
+                autocomplete="off"/>
+            <datalist id="est">
+                <option value="Amazonas"/>
+                <option value="Acre"/>
+                <option value="Alagoas"/>
+                <option value="Amapá"/>
+                <option value="Bahia"/>
+                <option value="Ceará"/>
+                <option value="Distrito Federal"/>
+                <option value="Espírito Santo"/>
+                <option value="Goiás"/>
+                <option value="Maranhão"/>
+                <option value="Mato Grosso"/>
+                <option value="Mato Grosso do Sul"/>
+                <option value="Minas Gerais"/>
+                <option value="Pará"/>
+                <option value="Paraná"/>
+                <option value="Paraíba"/>
+                <option value="Pernambuco"/>
+                <option value="Piauí"/>
+                <option value="Rio de Janeiro"/>
+                <option value="Rio Grande do Norte"/>
+                <option value="Rio Grande do Sul"/>
+                <option value="Rondônia"/>
+                <option value="Roraima"/>
+                <option value="Sergipe"/>
+                <option value="São Paulo"/>
+                <option value="Santa Catarina"/>
+                <option value="Tocantins"/>    
+            </datalist>
+            </font>
+            <BR>
+        </fieldset>
+        <fieldset>
+        <legend>Dados financeiros</legend>
+        <label for="frm_rad">Está trabalhando ?</label>
+        <input tabindex="11" type="radio" name="frm_rad" id="frm_rad" value="S" />Sim
+        <input tabindex="11" type="radio" name="frm_rad" id="frm_rad" value="N"/>Não
+        <font style="margin-left:175px;">
+        <label for="empresa"> Nome da empresa:</label>
+        <input tabindex="12" type="text" name="empresa" id="empresa" size="40" 
+        placeholder="" 
+        autocomplete="off"/> 
+        </font>
+        <br>
+        <font style="margin-left:422px;">
+        <label for="salario"> Salário:</label>
+        <input tabindex="13" type="text" name="salario" id="salario" size="40" 
+        placeholder="" 
+        autocomplete="off"/> 
+        </font>
+<br>
+            <input tabindex="13" type="reset" value="Limpar"/>
+            <input tabindex="14" type="submit" value="Enviar">
+
+
+
+
+
+
+        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+

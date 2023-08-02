@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> PESSOA JURÍDICA </title>
+        <link rel="icon" href="triste.png">
+    </head>
+    <script type="text/javascript" src="analytics.js"></script>
+        <style>
+            body{
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    font-size: 16px;
+    background-image: url("images.jpeg") ;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 800px;
+    
+
+}
+        </style>
+        <body>
+            <a href="menu.html">Sumário</a>
+            <a href="frm07.html">Voltar</a>
+            <a href="frm12.html">Próximo</a>
+            <h1 align="center"><font color="black"> CADASTRO </h1>
+                <fieldset>
+                <Legend>Dados da empresa</Legend>
+                <FORM name="dados" id="dados" method="post" action="frm08.html">
+                    <label for="CNPJ"> CNPJ:</label>
+                    <input tabindex="1" type="text" name="CNPJ" id="CNPJ" size="80" 
+                    placeholder="Digite seu CNPJ..." 
+                    autocomplete="off"/>
+                    <label for="nome">Nome Fantasia:</label>
+                    <input tabindex="2" type="text" name="nome" id="nome" size="80" 
+                    placeholder="Nome fantasia" 
+                    autocomplete="off"/>
+              <br>
+                    <label for="Razao">Razão Social :</label>
+                    <input tabindex="2" type="text" name="Razao" id="Razao" size="80" 
+                    placeholder="Nome fantasia" 
+                    autocomplete="off"/>
+                    <label for="estadual">Inscrição Estadual:</label>
+                    <input tabindex="2" type="text" name="estadual" id="estadual" size="80" 
+                    placeholder="" 
+                    autocomplete="off"/>
+                    <br>
+                    <label for="municipal">Inscrição Municipal:</label>
+                    <input tabindex="2" type="text" name="municipal" id="municipal" size="65" 
+                    placeholder="" >
+                
+                    <label for="capital">Capital Social:</label>
+                    <input tabindex="3" type="text" name="capital" id="capital" size="72" 
+                    placeholder="Valor aportado pelos sócios" 
+                    autocomplete="off"/>
+                    <br>
+                    <label for="socios">Quantidade de socios:</label>
+                    <input tabindex="4" type="number" name="socios" id="socios" size="10" 
+                    placeholder="" 
+                    autocomplete="on"/>
+                <br>
+                    <label for="socio">Sócio Responsável:</label>
+                    <input tabindex="3" type="text" name="socio" id="socio" size="72" 
+                    placeholder="nome completo" 
+                    autocomplete="off"/>
+                <br>
+                    <label for="natureza">Natureza Jurídica :</label>
+                    <input tabindex="3" list="n" name="natureza" id="natureza" size="72" 
+                    autocomplete="off"/>
+                    <datalist id="n">
+                        <option value="EI: Empresa Individual"/>
+                        <option value="MEI: Micro Empreendedor Individual"/>
+                        <option value="LTD: Sociedade Empresária Limitada"/>                
+                        <option value="UNI: Sociedade Empresaria Unipessoal"/>
+                        <option value="SS: Sociedade Simples"/>
+                        <option value="SA: Sociedade Anonima"/>
+                        <option value="EPP: Empresa de Pequeno Porte"/>
+                        <option value="EMG: Empresa de Medio e Grande Porte"/>
+                    </datalist>
+                    <label for="natureza">Regime Tributário :</label>
+                    <input tabindex="3" list="r" name="regime" id="regime" size="72" 
+                    autocomplete="off"/>
+                    <datalist id="r">
+                        <option value="MEI: Micro Empreendedor Individual"/>
+                        <option value="SIM: Simples Nacional"/>
+                        <option value="LP: Lucro Presumido"/>                
+                        <option value="LR: Lucro Real"/>
+                    </datalist>
+                    <br>
+                    <input tabindex="13" type="reset" value="Limpar"/>
+                    <input tabindex="14" type="submit" value="Enviar">
+                    </fieldset>
+                </FORM>
+        </body>
+</html>
+
+
+
+
+
